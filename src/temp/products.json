@@ -1,197 +1,197 @@
 [
   {
     "id": 1,
-    "name": "Футболка",
-    "image": "https://picsum.photos/id/1/300/300.jpg",
+    "name": "Жилет",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/0e3/400_600_1/sxgxecokpbe0q87n66yhx9a6s70zpv7u.jpg",
     "price": 1200,
     "category": "Одежда"
   },
   {
     "id": 2,
-    "name": "Джинсы",
-    "image": "https://picsum.photos/id/2/300/300.jpg",
+    "name": "Платье",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/f21/400_600_1/y032yccp16ajbfrkz00ivovm08wf1qms.jpg",
     "price": 3000,
     "category": "Одежда"
   },
   {
     "id": 3,
-    "name": "Куртка",
-    "image": "https://picsum.photos/id/3/300/300.jpg",
+    "name": "Лонгслив",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/1d1/400_600_1/xu37at8yuv8otu3fcdz8hqvcqwcawspr.jpg",
     "price": 7500,
     "category": "Одежда"
   },
   {
     "id": 4,
-    "name": "Кроссовки",
-    "image": "https://picsum.photos/id/4/300/300.jpg",
+    "name": "Тапочки",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/527/400_600_1/9yrm4rbh2uo2egao6s7hzrosaslvplrn.jpg",
     "price": 5000,
     "category": "Обувь"
   },
   {
     "id": 5,
-    "name": "Сандалии",
-    "image": "https://picsum.photos/id/5/300/300.jpg",
+    "name": "Кроссовки",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/0d4/400_600_1/s3jzfjivi8gjiksdjbo3z0n5bz9csls7.jpg",
     "price": 2500,
     "category": "Обувь"
   },
   {
     "id": 6,
-    "name": "Часы",
-    "image": "https://picsum.photos/seed/watch/300/300.jpg",
+    "name": "Шарф",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/f48/400_600_1/r80fpthakiir1fkxrp4f7mgqc5uxak7c.jpg",
     "price": 15000,
     "category": "Аксессуары"
   },
   {
     "id": 7,
-    "name": "Рюкзак",
-    "image": "https://picsum.photos/id/52/300/300.jpg",
+    "name": "Сумка",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/be0/400_600_1/rclx6n9rs4dl0z1yn2qckad7dbwh99l3.jpg",
     "price": 4000,
     "category": "Аксессуары"
   },
   {
     "id": 8,
-    "name": "Очки солнцезащитные",
-    "image": "https://picsum.photos/id/43/300/300.jpg",
+    "name": "Ремень",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/7ff/400_600_1/h5i3shek22rajbr01isnuonqlk39yoii.jpg",
     "price": 2000,
     "category": "Аксессуары"
   },
   {
     "id": 9,
-    "name": "Наушники",
-    "image": "https://picsum.photos/id/55/300/300.jpg",
+    "name": "Смартфон",
+    "image": "https://images.samsung.com/is/image/samsung/assets/kz_ru/mobile/s24fe/08-02-ft12-R12-Design-pc-570x304.jpg?$570_N_JPG$",
     "price": 8000,
     "category": "Гаджеты"
   },
   {
     "id": 10,
-    "name": "Смартфон",
-    "image": "https://picsum.photos/seed/iphone/300/300.jpg",
+    "name": "Планшет",
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/kz_ru/sm-x916bzaaskz/gallery/kz-ru-galaxy-tab-s9-ultra-5g-x916-sm-x916bzaaskz-thumb-537918056?$240_240_PNG$",
     "price": 30000,
     "category": "Гаджеты"
   },
   {
     "id": 11,
-    "name": "Планшет",
-    "image": "https://picsum.photos/seed/ipad/300/300.jpg",
+    "name": "Наушники",
+    "image": "https://images.samsung.com/is/image/samsung/assets/kz_ru/accessories/aug2024/05/CrossGBM_Accessories_Enrich_Buds3Pro_PC.png?$448_N_PNG$",
     "price": 40000,
     "category": "Гаджеты"
   },
   {
     "id": 12,
-    "name": "Кепка",
-    "image": "https://picsum.photos/id/12/300/300.jpg",
+    "name": "Сумочка",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/7ab/400_600_1/44h1o6gxiqex8ooywy4lba3na9yzcxux.jpg",
     "price": 1200,
     "category": "Аксессуары"
   },
   {
     "id": 13,
     "name": "Поясная сумка",
-    "image": "https://picsum.photos/id/130/300/300.jpg",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/b55/400_600_1/nkjoxk9ci7ozxs4qud1cyng4lpl1kfm1.jpg",
     "price": 3000,
     "category": "Аксессуары"
   },
   {
     "id": 14,
-    "name": "Рубашка",
-    "image": "https://picsum.photos/id/140/300/300.jpg",
+    "name": "Свитер",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/022/400_600_1/8krno7zfll2mxkvd0rhywnh53y6hipq9.jpg",
     "price": 3500,
     "category": "Одежда"
   },
   {
     "id": 15,
     "name": "Коврик для мыши",
-    "image": "https://picsum.photos/id/15/300/300.jpg",
+    "image": "https://basket-01.wbbasket.ru/vol81/part8197/8197471/images/big/1.webp",
     "price": 500,
     "category": "Гаджеты"
   },
   {
     "id": 16,
     "name": "Клавиатура",
-    "image": "https://picsum.photos/id/46/300/300.jpg",
+    "image": "https://i.moyo.ua/img/gallery/5099/4/1699611_middle.jpg",
     "price": 2500,
     "category": "Гаджеты"
   },
   {
     "id": 17,
     "name": "Стул",
-    "image": "https://picsum.photos/id/47/300/300.jpg",
+    "image": "https://mebelplus.kz/image/cache/catalog/stulya/montilux-350x350.jpeg",
     "price": 7000,
     "category": "Мебель"
   },
   {
     "id": 18,
     "name": "Стол",
-    "image": "https://picsum.photos/id/18/300/300.jpg",
+    "image": "https://pinskdrev.kz/web/files/imagick_cache/w580h580t3/web/catalogfiles/catalog/offers/stol-obed-_10_P3135dc93bfae8571.jpg",
     "price": 12000,
     "category": "Мебель"
   },
   {
     "id": 19,
     "name": "Тумбочка",
-    "image": "https://picsum.photos/id/195/300/300.jpg",
+    "image": "https://images.prom.ua/4795142583_4795142583.jpg?PIMAGE_ID=4795142583",
     "price": 4500,
     "category": "Мебель"
   },
   {
     "id": 20,
     "name": "Диван",
-    "image": "https://picsum.photos/id/20/300/300.jpg",
+    "image": "https://sayamebel.kz/wp-content/uploads/2025/01/Изображение-WhatsApp-2025-01-25-в-17.43.29_0d61d638-1.jpg",
     "price": 45000,
     "category": "Мебель"
   },
   {
     "id": 21,
-    "name": "Полка настенная",
-    "image": "https://picsum.photos/id/21/300/300.jpg",
+    "name": "Кресло",
+    "image": "https://sayamebel.kz/wp-content/uploads/2025/01/Изображение-WhatsApp-2025-01-24-в-21.21.41_f4ac69ac.jpg",
     "price": 2000,
     "category": "Мебель"
   },
   {
     "id": 22,
     "name": "Ботинки",
-    "image": "https://picsum.photos/id/222/300/300.jpg",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/b17/400_600_1/9ktye24s52fxwfxfwfyuf382auo3ke9x.jpg",
     "price": 6000,
     "category": "Обувь"
   },
   {
     "id": 23,
-    "name": "Спортивный костюм",
-    "image": "https://picsum.photos/id/230/300/300.jpg",
+    "name": "Юбка",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/d2c/400_600_1/puvoxdvm2zombm9r6hbc26ws1r4zc90w.jpg",
     "price": 7000,
     "category": "Одежда"
   },
   {
     "id": 24,
-    "name": "Свитер",
-    "image": "https://picsum.photos/id/248/300/300.jpg",
+    "name": "Куртка",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/e35/400_600_1/kao3hqwwebf1r2r15uy24rykte2skww9.jpg",
     "price": 4000,
     "category": "Одежда"
   },
   {
     "id": 25,
-    "name": "Ремень кожаный",
-    "image": "https://picsum.photos/id/25/300/300.jpg",
+    "name": "Мини Сумка",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/b74/400_600_1/wy9umwlowx5aym8w1fqx4pqmi5vzixbg.jpg",
     "price": 2500,
     "category": "Аксессуары"
   },
   {
     "id": 26,
-    "name": "Бейсболка",
-    "image": "https://picsum.photos/id/26/300/300.jpg",
+    "name": "Сумка",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/06f/400_600_1/99tkooh5mdzy4fewstc3damp7d83ok56.jpg",
     "price": 1300,
     "category": "Аксессуары"
   },
   {
     "id": 27,
     "name": "Умные часы",
-    "image": "https://picsum.photos/id/27/300/300.jpg",
+    "image": "https://object.pscloud.io/cms/cms/Photo/img_0_911_1055_0_1_Fyga6Q.jpg",
     "price": 20000,
     "category": "Гаджеты"
   },
   {
     "id": 28,
-    "name": "Тапочки",
-    "image": "https://picsum.photos/id/288/300/300.jpg",
+    "name": "Кроссовки",
+    "image": "https://kimex.kz/upload/resize_cache/iblock/eeb/400_600_1/32uadc3km50fw3ufo35c9aotkcbej9rs.jpg",
     "price": 1000,
     "category": "Обувь"
   }

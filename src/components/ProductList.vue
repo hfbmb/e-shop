@@ -25,14 +25,16 @@
           </v-img>
 
           <!-- Иконка "Избранное" справа -->
-          <v-btn
-          	icon
-          	variant="text"
-          	class="position-absolute top-0 end-0 ma-2"
-            @click="toggleFavorite(product)"
-          >
-            <v-icon :color="isFavorite(product.id) ? 'red' : 'black'">mdi-cards-heart-outline</v-icon>
-          </v-btn>
+					<v-btn
+						icon
+						variant="text"
+						class="position-absolute top-0 end-0 ma-2"
+						@click="toggleFavorite(product)"
+					>
+						<v-icon :color="isFavorite(product.id) ? 'red' : 'black'">
+							{{ isFavorite(product.id) ? "mdi-heart" : "mdi-heart-outline" }}
+						</v-icon>
+					</v-btn>
 
           <!-- Контент карточки -->
           <v-card-title class="text-center">{{ product.name }}</v-card-title>
@@ -43,16 +45,16 @@
           </v-card-text>
 
           <!-- Кнопка "Добавить в корзину" / "Перейти в корзину" -->
-          <v-card-actions>
-            <v-btn
-              block
-              :color="isInCart(product.id) ? 'green' : 'blue'"
-              @click="handleCartAction(product)"
-            >
-              <v-icon left>{{ isInCart(product.id) ? 'mdi-cart' : 'mdi-cart-plus' }}</v-icon>
-              {{ isInCart(product.id) ? 'Перейти в корзину' : 'Добавить в корзину' }}
-            </v-btn>
-          </v-card-actions>
+					<v-card-actions>
+						<v-btn
+							block
+							:color="isInCart(product.id) ? 'green' : 'blue'"
+							@click="handleCartAction(product)"
+						>
+							<v-icon start>{{ isInCart(product.id) ? "mdi-cart" : "mdi-cart-plus" }}</v-icon>
+							{{ isInCart(product.id) ? "Перейти в корзину" : "Добавить в корзину" }}
+						</v-btn>
+					</v-card-actions>
         </v-card>
       </v-col>
     </v-row>
@@ -60,7 +62,7 @@
 </template>
 
 <script>
-import { computed, ref } from "vue";
+import { computed, ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import useProducts from "@/composables/useProducts";
 
@@ -76,14 +78,28 @@ export default {
 
     getAllProducts();
 
-    // Фильтрация товаров по категории
+    // === Загружаем избранное и корзину из localStorage ===
+    const loadFavorites = () => {
+      favorites.value = JSON.parse(localStorage.getItem("favorites")) || [];
+    };
+
+    const loadCart = () => {
+      cart.value = JSON.parse(localStorage.getItem("cart")) || [];
+    };
+
+    onMounted(() => {
+      loadFavorites();
+      loadCart();
+    });
+
+    // === Фильтрация товаров по категории ===
     const filteredProducts = computed(() => {
       return props.selectedCategory === "Все"
         ? products.value
         : products.value.filter((product) => product.category === props.selectedCategory);
     });
 
-    // Добавление/удаление из избранного
+    // === Избранное ===
     const toggleFavorite = (product) => {
       const index = favorites.value.findIndex((item) => item.id === product.id);
       if (index === -1) {
@@ -91,15 +107,14 @@ export default {
       } else {
         favorites.value.splice(index, 1);
       }
+      localStorage.setItem("favorites", JSON.stringify(favorites.value));
     };
 
-    // Проверка, в избранном ли товар
     const isFavorite = (id) => favorites.value.some((item) => item.id === id);
 
-    // Проверка, есть ли товар в корзине
+    // === Корзина ===
     const isInCart = (id) => cart.value.some((item) => item.id === id);
 
-    // Действие по кнопке (добавить или перейти в корзину)
     const handleCartAction = (product) => {
       if (isInCart(product.id)) {
         router.push("/cart");
@@ -108,7 +123,6 @@ export default {
       }
     };
 
-    // Добавление товара в корзину
     const addToCart = (product) => {
       const existingProduct = cart.value.find((item) => item.id === product.id);
       if (existingProduct) {
@@ -116,6 +130,7 @@ export default {
       } else {
         cart.value.push({ ...product, quantity: 1 });
       }
+      localStorage.setItem("cart", JSON.stringify(cart.value));
     };
 
     return {
@@ -128,3 +143,4 @@ export default {
   },
 };
 </script>
+
