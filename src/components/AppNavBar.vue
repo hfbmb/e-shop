@@ -9,7 +9,21 @@
 			class="ms-3"
 		/>
 
-		<!-- отобразить ссылки на избранное и корзину -->
+		<v-btn
+			:to="'favorites'"
+			variant="text"
+  		class="d-flex align-center ms-2"
+		>
+			<v-icon color="black" size="24">mdi-cards-heart-outline</v-icon>
+			<span class="text-subtitle-1 ms-1 font-weight-medium">0</span>
+		</v-btn>
+
+    <v-btn
+     	:to="'cart'"
+     	text="Cart"
+			slim
+			class="ms-3"
+    />
 
 		<v-btn
 			:to="'table'"

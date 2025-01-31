@@ -1,35 +1,29 @@
 <template>
-	<v-container class="h-100">
-		<v-row>
-			<v-col
-				md="3"
-			>
-				<v-card>
-					<v-card-title>
-						Фильтры
-					</v-card-title>
-					<v-card-text>
-						// отобразить фильтр по категории
-					</v-card-text>
-				</v-card>
-			</v-col>
-			<v-col
-				md="9"
-			>
-				<div class="mb-4 text-h3">
-					Все товары
-				</div>
-			</v-col>
-		</v-row>
-	</v-container>
+  <v-container class="h-100">
+
+    <!-- Фильтр по категориям -->
+    <FiltersBar v-model="selectedCategory" />
+
+    <!-- Список товаров -->
+    <v-row>
+      <v-col cols="12">
+        <ProductList :selectedCategory="selectedCategory" />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
-<script setup>
-// import useProducts from '@/composables/useProducts'
+<script>
+import { ref } from "vue";
+import FiltersBar from "@/components/FiltersBar.vue";
+import ProductList from "@/components/ProductList.vue";
 
-// const {
-// 	flags,
-// 	products,
-// 	getAllProducts,
-// } = useProducts()
+export default {
+  components: { FiltersBar, ProductList },
+  setup() {
+    const selectedCategory = ref("Все"); // Выбранная категория
+
+    return { selectedCategory };
+  },
+};
 </script>
